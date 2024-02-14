@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="MainWindow" alignment="CENTER" focusTraversable="true" prefHeight="480.0" prefWidth="439.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_triangle.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="540.0" prefWidth="401.0">
+      <children>
+          <Button fx:id="ButtonCalculate" disable="true" layoutX="131.0" layoutY="192.0" onAction="#onCalculateButtonClick" prefHeight="43.0" prefWidth="153.0" text="Вычислить">
+
+
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <TextField fx:id="Text_C_X" disable="true" layoutX="281.0" layoutY="96.0" prefHeight="26.0" prefWidth="115.0" text="-" />
+         <TextField fx:id="Text_B_X" disable="true" layoutX="150.0" layoutY="96.0" prefHeight="26.0" prefWidth="115.0" text="-" />
+         <TextField fx:id="Text_A_X" disable="true" layoutX="21.0" layoutY="96.0" prefHeight="26.0" prefWidth="115.0" text="-" />
+         <Label layoutX="33.0" layoutY="65.0" text="Координаты А" />
+         <Label layoutX="153.0" layoutY="65.0" text="Координаты B" />
+         <Label layoutX="293.0" layoutY="65.0" text="Координаты С" />
+         <TextField fx:id="Text_C_Y" disable="true" layoutX="281.0" layoutY="132.0" prefHeight="26.0" prefWidth="115.0" text="-" />
+         <TextField fx:id="Text_B_Y" disable="true" layoutX="150.0" layoutY="132.0" prefHeight="26.0" prefWidth="115.0" text="-" />
+         <TextField fx:id="Text_A_Y" disable="true" layoutX="21.0" layoutY="132.0" prefHeight="26.0" prefWidth="115.0" text="-" />
+         <Label layoutX="3.0" layoutY="100.0" text="X:" />
+         <Label layoutX="3.0" layoutY="136.0" text="Y:" />
+         <Label layoutX="39.0" layoutY="267.0" text="Длины сторон" />
+         <Label layoutX="240.0" layoutY="267.0" text="Углы треугольника" />
+         <Label layoutX="11.0" layoutY="303.0" text="АB:" />
+         <Label layoutX="11.0" layoutY="326.0" text="AC:" />
+         <Label layoutX="11.0" layoutY="348.0" text="BC:" />
+         <Label fx:id="Label_Length_AB" layoutX="52.0" layoutY="304.0" text="-" />
+         <Label fx:id="Label_Length_AC" layoutX="52.0" layoutY="326.0" text="-" />
+         <Label fx:id="Label_Length_BC" layoutX="52.0" layoutY="348.0" text="-" />
+         <Label layoutX="228.0" layoutY="302.0" text="A:" />
+         <Label layoutX="228.0" layoutY="326.0" text="B:" />
+         <Label layoutX="228.0" layoutY="348.0" text="C:" />
+         <Label fx:id="Label_Angle_A" layoutX="265.0" layoutY="302.0" text="-" />
+         <Label fx:id="Label_Angle_B" layoutX="265.0" layoutY="326.0" text="-" />
+         <Label fx:id="Label_Angle_C" layoutX="265.0" layoutY="348.0" text="-" />
+         <Label layoutX="11.0" layoutY="383.0" text="Периметр треугольника:" />
+         <Label fx:id="Label_Perimeter" layoutX="191.0" layoutY="383.0" text="-" />
+         <Label layoutX="11.0" layoutY="408.0" text="Площадь треугольника:" />
+         <Label fx:id="Label_Square" layoutX="191.0" layoutY="408.0" text="-" />
+         <Button fx:id="Button_CreateTriangle" layoutX="93.0" layoutY="14.0" minHeight="18.0" mnemonicParsing="false" onAction="#onButtonCreateClick" prefHeight="34.0" prefWidth="214.0" text="Создать треугольник" />
+      </children>
+   </AnchorPane>
+</VBox>
