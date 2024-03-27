@@ -193,7 +193,6 @@ public class Triangle {
     Переопределённый метод toString*/
     @Override
     public String toString() {
-        String var10000 = Double.toString(this.Ax);
-        return "Координаты треугольника: A(" + var10000 + ":" + Double.toString(this.Ay) + ") B(" + Double.toString(this.Bx) + ":" + Double.toString(this.By) + ") C(" + Double.toString(this.Cx) + ":" + Double.toString(this.Cy) + ")";
+        return "Координаты треугольника: A(" + Double.toString(this.Ax) + ":" + Double.toString(this.Ay) + ") B(" + Double.toString(this.Bx) + ":" + Double.toString(this.By) + ") C(" + Double.toString(this.Cx) + ":" + Double.toString(this.Cy) + ")";
     }
 }

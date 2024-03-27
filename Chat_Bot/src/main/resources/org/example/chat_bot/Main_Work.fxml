@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.chat_bot.WindowWorkController">
+   <AnchorPane fx:id="MainWindow" prefHeight="436.0" prefWidth="434.0">
+      <TextField fx:id="TextFieldMessage" layoutX="7.0" layoutY="39.0" prefHeight="32.0" prefWidth="323.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="330.0" layoutY="39.0" mnemonicParsing="false" onAction="#onButtonSendMessage" prefHeight="32.0" prefWidth="97.0" text="Отправить">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="TextAreaMessages" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="7.0" layoutY="81.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="420.0" promptText="Ничего нет(" scaleShape="false" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="81.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+       <MenuBar layoutX="11.0" layoutY="2.0" prefHeight="25.0" prefWidth="434.0">
+           <Menu mnemonicParsing="false" text="Файл">
+               <MenuItem mnemonicParsing="false" onAction="#onSaveFileClick" text="Сохранить" />
+               <MenuItem mnemonicParsing="false" onAction="#onOpenFileClick" text="Открыть" />
+           </Menu>
+           <Menu mnemonicParsing="false" onAction="#onAuthorClick" text="Об авторе" />
+           <Menu mnemonicParsing="false" text="Выход">
+               <MenuItem mnemonicParsing="false" onAction="#onExitClick" text="Закрыть" />
+           </Menu>
+       </MenuBar>
+   </AnchorPane>
+</AnchorPane>
